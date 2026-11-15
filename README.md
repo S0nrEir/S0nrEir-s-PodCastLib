@@ -53,10 +53,12 @@
 复制 `deploy/config.example.json` 为 `deploy/config.local.json`，在本地填写 NAS 地址、账号、密码和共享名。示例域名仅作占位，需替换后才能连接。已有本地配置时保留原文件。
 
 - 只提交示例配置；`config.local.json`、环境变量文件和私钥已加入 `.gitignore`。
+- `python deploy/zspace_config.py` 仅显示各字段是否已配置，地址、账号、密码和共享名均不会明文输出。
 - `data/`、数据库及其日志文件、测试 Cookie、`build/` 和 `podcast-topics-*.json` 导出文件不入库。自定义名称的导出或备份请放到 `data/` 或仓库外。
 - 数据库不仅包含选题，还存有访问密码哈希及会话签名密钥；不要上传数据库或包含它的备份。
 - 提交前检查 `git status --short` 和 `git diff --cached`；不要对私人文件使用 `git add -f`。
 - `.gitignore` 不会移除已跟踪文件或历史记录中的信息。历史中若出现真实凭据，需要更换凭据并另行清理历史。
+- Git 提交还会公开作者姓名和邮箱；需要隐藏个人邮箱时，在提交前配置 GitHub 的隐私邮箱（noreply）。这与代码里的连接配置是两项独立设置。
 
 ### 忘记密码 / 重置数据
 

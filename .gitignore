@@ -1,6 +1,7 @@
 # Local NAS credentials and environment files
 deploy/.ssh_env
 *.ssh_env
+*.ssh_env.*
 deploy/config.local.json
 *.local.json
 *.local.json.*
@@ -16,12 +17,15 @@ deploy/config.local.json
 # Private application data, exports and sessions
 data/
 *.db
+*.db.*
 *.db-wal
 *.db-shm
 *.db-journal
 *.sqlite
+*.sqlite.*
 *.sqlite-*
 *.sqlite3
+*.sqlite3.*
 *.sqlite3-*
 podcast-topics-*.json
 cookies*.txt
@@ -33,6 +37,7 @@ cookies*.txt
 *.key
 *.p12
 *.pfx
+*.ppk
 id_rsa
 id_ed25519
 id_ecdsa
