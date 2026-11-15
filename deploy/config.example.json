@@ -1,0 +1,7 @@
+{
+  "nas_host": "nas.example.invalid",
+  "site_url": "http://nas.example.invalid:8390",
+  "ssh_user": "",
+  "ssh_password": "",
+  "smb_share": ""
+}
